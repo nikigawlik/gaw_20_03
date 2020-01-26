@@ -128,5 +128,6 @@ export function createImageNode(index) {
     textNode.style.width = "150px";
     textNode.style.height = "150px";
     textNode.style.backgroundImage = `url(luci000${index}.png)`;
+    textNode.style.backgroundSize = "cover";
     return node;
 }
