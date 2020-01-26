@@ -1,0 +1,71 @@
+* {
+    font-family: monospace;
+}
+
+/* game */
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+.node-area, svg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.draggable {
+    display: block;
+    position: absolute;
+}
+
+.node {
+    min-width: 64px;
+    max-width: 220px;
+    min-height: 64px;
+    background-color: #eee;
+    border: 1px solid #111;
+    padding: 5px;
+    box-shadow: 5px 5px #777;
+}
+
+.node {
+    user-select: none;
+}
+
+.node h3 {
+    margin-top: 0;
+}
+
+.node textarea {
+    resize: none;
+}
+
+.pin {
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 3.5px double #111;
+    background-color: #eee;
+}
+
+.out {
+    float: right;
+}
+
+.in {
+    float: left;
+}
+
+.centered {
+    text-align: center;
+}
